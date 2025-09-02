@@ -1,10 +1,10 @@
-# Makefile for the HSUPipeline site
+# Makefile for the HSNPipeline site
 
 ##########################################################################
 ## VARIABLES
 #
-ORG 	    = https://github.com/HSUPipeline
-SITE        = HSUPipeline.github.io
+ORG 	    = https://github.com/HSNPipeline
+SITE        = HSNPipeline.github.io
 OUTPUTS     = outputs
 
 

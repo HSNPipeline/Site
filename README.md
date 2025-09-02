@@ -1,9 +1,9 @@
 # Site
 
-This repository creates the HSUPipeline website.
+This repository creates the HSNPipeline website.
 
 Note that created website is hosted via the
-[host](https://github.com/HSUPipeline/HSUPipeline.github.io)
+[host](https://github.com/HSNPipeline/HSNPipeline.github.io)
 repository - this repository is used to organize and create the site content.
 
 ## Instructions

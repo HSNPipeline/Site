@@ -1,11 +1,11 @@
-title: 'HSUPipeline'
-description: 'A pipeline for processing and analyzing single-unit neural data from human subjects.'
+title: 'HSNPipeline'
+description: 'A pipeline for processing and analyzing single-neuron data from human subjects.'
 
 remote_theme: hydecorp/hydejack
 
 author:
   social:
-    github: HSUPipeline
+    github: HSNPipeline
 
 menu:
   - title:  Home
@@ -22,7 +22,7 @@ menu:
     url:    /codemap/
   - title:  Projects
     url:    /projects/
-  - title:  convnwb
-    url:    /convnwb
+  - title:  hsntools
+    url:    /hsntools
   - title:  spiketools
     url:    /spiketools

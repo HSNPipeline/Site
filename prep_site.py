@@ -1,4 +1,4 @@
-"""Prepare the HSUPipeline site."""
+"""Prepare the HSNPipeline site."""
 
 import os
 from pathlib import Path
@@ -9,7 +9,7 @@ from shutil import copyfile
 ###################################################################################################
 
 # Define the string definitions of commands to use
-CLONE_COMMAND = 'git clone https://github.com/HSUPipeline/{}'
+CLONE_COMMAND = 'git clone https://github.com/HSNPipeline/{}'
 RM_COMMAND = 'rm -rf {}'
 
 # Define repo(s) to copy from
@@ -40,7 +40,7 @@ def main():
 
     # Process files to create webpage
     os.system(CLONE_COMMAND.format(REPO))
-    create_page(REPO, 'README.md', 'index.md', 'HSUPipeline')
+    create_page(REPO, 'README.md', 'index.md', 'HSNPipeline')
     drop_lines(FOLDER / 'index.md', ['permalink'])
     create_page(REPO, 'Templates.md', 'templates.md', 'Templates')
     create_page(REPO, 'Sorting.md', 'sorting.md', 'Sorting')
