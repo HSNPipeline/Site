@@ -12,6 +12,8 @@ menu:
     url:    /
   - title:  Templates
     url:    /templates/
+  - title:  Preprocessing
+    url:    /preprocessing/
   - title:  Sorting
     url:    /sorting/
   - title:  Converting

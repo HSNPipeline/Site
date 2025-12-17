@@ -28,7 +28,9 @@ ADD_LINES = [
 # Define output folder
 FOLDER = Path('outputs')
 
-PAGES = ['Templates', 'Sorting', 'Converting', 'Analysis', 'Projects', 'CodeMap']
+# Define set of files to copy from REPO and create webpages from
+PAGES = ['Templates', 'Preprocessing', 'Sorting', 'SortingRhino',
+         'Converting', 'Analysis', 'Projects', 'CodeMap']
 
 ###################################################################################################
 ###################################################################################################
