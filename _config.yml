@@ -1,5 +1,5 @@
 title: 'HSNPipeline'
-description: 'A pipeline for processing and analyzing single-neuron data from human subjects.'
+description: 'A pipeline for processing and analyzing human single-neuron data.'
 
 remote_theme: hydecorp/hydejack
 
