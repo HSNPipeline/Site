@@ -28,6 +28,8 @@ ADD_LINES = [
 # Define output folder
 FOLDER = Path('outputs')
 
+PAGES = ['Templates', 'Sorting', 'Converting', 'Analysis', 'Projects', 'CodeMap']
+
 ###################################################################################################
 ###################################################################################################
 
@@ -38,16 +40,17 @@ def main():
     if not os.path.exists(FOLDER):
         os.mkdir(FOLDER)
 
-    # Process files to create webpage
+    # Clone source repository
     os.system(CLONE_COMMAND.format(REPO))
+
+    # Process README file to create index webpage
     create_page(REPO, 'README.md', 'index.md', 'HSNPipeline')
     drop_lines(FOLDER / 'index.md', ['permalink'])
-    create_page(REPO, 'Templates.md', 'templates.md', 'Templates')
-    create_page(REPO, 'Sorting.md', 'sorting.md', 'Sorting')
-    create_page(REPO, 'Converting.md', 'converting.md', 'Converting')
-    create_page(REPO, 'Analysis.md', 'analysis.md', 'Analysis')
-    create_page(REPO, 'Projects.md', 'projects.md', 'Projects')
-    create_page(REPO, 'CodeMap.md', 'codemap.md', 'CodeMap')
+
+    # Process files to create additional webpages
+    for page in PAGES:
+        create_page(REPO, page + '.md', page.lower() + '.md', page)
+
     os.system(RM_COMMAND.format(REPO))
 
 
