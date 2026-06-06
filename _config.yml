@@ -24,6 +24,8 @@ menu:
     url:    /codemap/
   - title:  Projects
     url:    /projects/
+  - title:  Reference
+    url:    /reference/
   - title:  hsntools
     url:    /hsntools
   - title:  spiketools
